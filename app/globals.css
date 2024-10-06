@@ -1,0 +1,136 @@
+/* styles/globals.css */
+body {
+    background-color: #17171E; /* Set background color */
+    color: white; /* Optional: Set text color for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+  .custom-button {
+    margin-top: 20px;
+    padding: 10px 20px; /* Increased padding for a larger button */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid rgba(102, 93, 195, .8);; /* Outline color */
+    color: rgba(102, 93, 195, .8);; /* Text color */
+    margin-left: 230px;
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+  }
+
+  .custom-button:hover {
+    background-color: rgba(102, 93, 195, .8);; /* Background color on hover */
+    color: white; /* Text color on hover */
+  }
+.large-title {
+    font-size: 1.5rem; /* Adjust the size as necessary */
+    line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+.large-title-1 {
+  font-size: 2.5rem; /* Adjust the size as necessary */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  font-weight: bold;
+}
+
+.large-title-2 {
+  font-size: 1.2rem; /* Adjust the size as necessary */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  font-weight: 400;
+}
+
+.sidebar  {
+  width: 10rem;
+  height: 200vh;
+  background-color: white;
+  padding: 1rem;
+  background-color: #282834;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sidebar__wrapper {
+  position: relative;
+}
+.sidebar_top {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem; 
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #17171E;
+}
+
+.sidebar__logo {
+  width: 3.4rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.sidebar__list {
+  list-style: none;
+  margin-left: -2.4rem;
+}
+
+.sidebar__link {
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #EAEAFA80;
+  padding: 0.8rem 1rem;
+  display: flex;
+  background-color: #17171E;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+}
+
+.sidebar__icon {
+  font-size: 1.2rem;
+  display: inline-block;
+
+}
+
+.sidebar__name {
+  margin-left:0.5rem;
+
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  top: 4.7rem;
+  border: none;
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translateX(50%);
+  font-size: 1.1rem;
+}
+
+.btn_top {
+  top: 0;
+  position: relative;
+  margin-left: -0rem;
+  font-size: 4.1rem;
+  background-color: #17171E;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 1rem;
+
+}
+
+[data-collapse ="true"] {
+  width: 5.3rem;
+
+}
+
+[data-collapse ="true"] .sidebar__name,
+[data-collapse ="true"] .sidebar__logo-name{
+  display: none;
+}
